@@ -1,6 +1,6 @@
 # ⚽ Playing with Arrays
 
-## 01 Write a program to read and display n numbers using an array.
+## 👺 01 Write a program to read and display n numbers using an array.
 
 ### <u>Solution in C language 🦭</u>
 
@@ -48,7 +48,7 @@ int main()
 
 ---
 
-## 02 Write a program to find the mean of n numbers using arrays.
+## 👺 02 Write a program to find the mean of n numbers using arrays.
 ### <u>Solution in C language 🦭</u>
 
 ```c
@@ -95,7 +95,7 @@ int main()
  ```
  ---
 
- ## 03 Write a program to print the position of the smallest number of n numbers using arrays.
+ ## 👺 03 Write a program to print the position of the smallest number of n numbers using arrays.
 ### <u>Solution in C language 🦭</u>
 ```c
 #include <stdio.h>
