@@ -32,4 +32,28 @@ A Cheatsheet for all Data Structures and Algorithms for under graduate students
     - [Multiplication of 2-D Arrays](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md#-18-write-a-program-to-multiply-two-2-d-arrays)
     - [Transpose of a Matrix](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md#-19-write-a-program-to-transpose-a-matrix)
 
+- 🧩 [Linked List](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/02%20Linked%20List.md)
+    - [Implement Singly Linked List](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/02%20Linked%20List.md#-01-implement-a-singly-linked-list-and-perform-several-operations)
+        
+        Operation performed :
+
+        - Create List
+        - Display List
+        - Insert at Beginning
+        - Insert at End 
+        - Insert at Before 
+        - Insert at After 
+        - Delete from Beginning
+        - Delete from End
+        - Delete After a node
+        - Delete a specific node
+        - Delete entire List
+        - Sort the List
+        - Reverse the List
+        - Count Total Nodes
+        - Search for a Node
+    
+    - [Implement Circular Linked List]()
+
+
 ### 🎯 Algorithms
