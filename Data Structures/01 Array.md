@@ -970,3 +970,302 @@ The new array is:
  arr[2] = 11
  arr[3] = 56
 ```
+---
+
+## 👺 15 Write a program to find Duplicate numbers in array uising function
+### <u>Solution in C++ language 🐳</u>
+
+```c++
+#include <stdio.h>
+#include <unordered_set>
+
+bool hasDuplicates(int array[], int n);
+
+int main()
+{
+    int array[] = {1, 2, 3, 4, 4};
+    int n = sizeof(array) / sizeof(array[0]);
+
+    if (hasDuplicates(array, n) == true)
+        printf("Array has duplicate elements");
+    else
+        printf("Array does not have duplicate elements");
+  
+    return 0;
+}
+
+bool hasDuplicates(int array[], int n)
+{
+
+    if (n == 0)
+        return false;
+
+    // Create an empty set
+    std::unordered_set<int> s;
+
+    // Iterate through the input array
+    for (int i = 0; i < n; i++)
+    {
+        // If element is already in set, return true
+        if (s.count(array[i]) > 0)
+            return true;
+
+        s.insert(array[i]);
+    }
+
+    // We reach here if element is not present in set
+    return false;
+}
+```
+### Output 😶‍🌫️
+```text
+Array has duplicate elements
+```
+---
+## 👺 16 Write a program to implement Paskal's Triangle using array
+### <u>Solution in C language 🦭</u>
+```c
+#include "stdio.h"
+
+int main()
+{
+    int arr[7][7] = {0};
+    int row = 2, col, i, j;
+    arr[0][0] = arr[1][0] = arr[1][1] = 1;
+    
+    while (row <= 7)
+    {
+        arr[row][0] = 1;
+        for (col = 1; col <= row; col++)
+            arr[row][col] = arr[row - 1][col - 1] + arr[row - 1][col];
+        row++;
+    }
+    for (i = 0; i < 7; i++)
+    {
+        printf("\n");
+        for (j = 0; j <= i; j++)
+            printf("\t %d", arr[i][j]);
+    }
+
+    return 0;
+}
+```
+### Output 😶‍🌫️
+```text
+         1
+         1       1
+         1       2       1
+         1       3       3       1
+         1       4       6       4       1
+         1       5       10      10      5       1
+         1       6       15      20      15      6       1
+```
+---
+
+## 👺 17 Write a program to Add two 2-D arrays
+### <u>Solution in C language 🦭</u>
+```c
+#include <stdio.h>
+int main() {
+  int r, c, a[100][100], b[100][100], sum[100][100], i, j;
+  printf("Enter the number of rows (between 1 and 100): ");
+  scanf("%d", &r);
+  printf("Enter the number of columns (between 1 and 100): ");
+  scanf("%d", &c);
+
+  printf("\nEnter elements of 1st matrix:\n");
+  for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      printf("Enter element a%d%d: ", i + 1, j + 1);
+      scanf("%d", &a[i][j]);
+    }
+
+  printf("Enter elements of 2nd matrix:\n");
+  for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      printf("Enter element b%d%d: ", i + 1, j + 1);
+      scanf("%d", &b[i][j]);
+    }
+
+  // adding two matrices
+  for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      sum[i][j] = a[i][j] + b[i][j];
+    }
+
+  // printing the result
+  printf("\nSum of two matrices: \n");
+  for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      printf("%d   ", sum[i][j]);
+      if (j == c - 1) {
+        printf("\n\n");
+      }
+    }
+
+  return 0;
+}
+```
+### Output 😶‍🌫️
+
+```text
+Enter the number of rows (between 1 and 100): 2
+Enter the number of columns (between 1 and 100): 3
+
+Enter elements of 1st matrix:
+Enter element a11: 2
+Enter element a12: 3
+Enter element a13: 4
+Enter element a21: 5
+Enter element a22: 2
+Enter element a23: 3
+Enter elements of 2nd matrix:
+Enter element b11: -4
+Enter element b12: 5
+Enter element b13: 3
+Enter element b21: 5
+Enter element b22: 6
+Enter element b23: 3
+
+Sum of two matrices: 
+-2   8   7   
+
+10   8   6 
+```
+---
+
+## 👺 18 Write a program to Multiply two 2-D arrays
+### <u>Solution in C language 🦭</u>
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i, j, k;
+    int rows1, cols1, rows2, cols2, res_rows, res_cols;
+    int mat1[5][5], mat2[5][5], res[5][5];
+
+    printf("\n Enter the number of rows in the first matrix : ");
+    scanf("%d", &rows1);
+    printf("\n Enter the number of columns in the first matrix : ");
+    scanf("%d", &cols1);
+    printf("\n Enter the number of columns in the second matrix : ");
+    scanf("%d", &cols2);
+
+    rows2 = cols1;
+    res_rows = rows1;
+    res_cols = cols2;
+
+    // Taking inputs
+    printf("\n Enter the elements of the first matrix ");
+    for (i = 0; i < rows1; i++)
+    {
+        for (j = 0; j < cols1; j++)
+        {
+            scanf("%d", &mat1[i][j]);
+        }
+    }
+    printf("\n Enter the elements of the second matrix ");
+    for (i = 0; i < rows2; i++)
+    {
+        for (j = 0; j < cols2; j++)
+        {
+            scanf("%d", &mat2[i][j]);
+        }
+    }
+
+    // Calculating
+    for (i = 0; i < res_rows; i++)
+    {
+        for (j = 0; j < res_cols; j++)
+        {
+            res[i][j] = 0;
+            for (k = 0; k < res_cols; k++)
+                res[i][j] += mat1[i][k] * mat2[k][j];
+        }
+    }
+
+    // Printing Result
+    printf("\n The elements of the product matrix are ");
+    for (i = 0; i < res_rows; i++)
+    {
+        printf("\n");
+        for (j = 0; j < res_cols; j++)
+            printf("\t %d", res[i][j]);
+    }
+    return 0;
+}
+```
+### Output 😶‍🌫️
+```text
+ Enter the number of rows in the first matrix : 2
+
+ Enter the number of columns in the first matrix : 3
+
+ Enter the number of columns in the second matrix : 2
+
+ Enter the elements of the first matrix 1 2 3 4 5 6
+
+ Enter the elements of the second matrix 1 2 3 4 5 6
+
+ The elements of the product matrix are 
+         7       10
+         19      28
+```
+---
+
+## 👺 19 Write a program to Transpose a Matrix
+### <u>Solution in C language 🦭</u>
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i, j, mat[3][3], transposed_mat[3][3];
+
+    printf("\n Enter the elements of the matrix ");
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            scanf("%d", &mat[i][j]);
+        }
+    }
+    printf("\n The elements of the matrix are ");
+    for (i = 0; i < 3; i++)
+    {
+        printf("\n");
+        for (j = 0; j < 3; j++)
+            printf("\t %d", mat[i][j]);
+    }
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+            transposed_mat[i][j] = mat[j][i];
+    }
+    printf("\n The elements of the transposed matrix are ");
+    for (i = 0; i < 3; i++)
+    {
+        printf("\n");
+        for (j = 0; j < 3; j++)
+            printf("\t %d", transposed_mat[i][j]);
+    }
+    return 0;
+}
+```
+### Output 😶‍🌫️
+
+```
+ Enter the elements of the matrix 1 2 3 4 5 6 7 8 9
+
+ The elements of the matrix are 
+         1       2       3
+         4       5       6
+         7       8       9
+ The elements of the transposed matrix are 
+         1       4       7
+         2       5       8
+         3       6       9
+```
