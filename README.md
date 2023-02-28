@@ -8,9 +8,9 @@ A Cheatsheet for all Data Structures and Algorithms for under graduate students
 
 ## 🦐 Index
 
-### Data Structures
+### 🎯 Data Structures
 
-1. [Arrays](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md)
+- 🧩 [Arrays](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md)
 
     - [Read and Display 1-D Array](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md#-19-write-a-program-to-transpose-a-matrix)
     - [Mean of array](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md#-02-write-a-program-to-find-the-mean-of-n-numbers-using-arrays)
@@ -32,4 +32,4 @@ A Cheatsheet for all Data Structures and Algorithms for under graduate students
     - [Multiplication of 2-D Arrays](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md#-18-write-a-program-to-multiply-two-2-d-arrays)
     - [Transpose of a Matrix](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md#-19-write-a-program-to-transpose-a-matrix)
 
-### Algorithms
+### 🎯 Algorithms
