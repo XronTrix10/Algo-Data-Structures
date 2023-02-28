@@ -972,7 +972,7 @@ The new array is:
 ```
 ---
 
-## 👺 15 Write a program to find Duplicate numbers in array uising function
+## 👺 15 Write a program to find Duplicate numbers in array using function
 ### <u>Solution in C++ language 🐳</u>
 
 ```c++
