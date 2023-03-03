@@ -12,7 +12,7 @@ A Cheatsheet for all Data Structures and Algorithms for under graduate students
 
 - 🧩 [Arrays](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md)
 
-    - [Read and Display 1-D Array](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md#-19-write-a-program-to-transpose-a-matrix)
+    - [Read and Display 1-D Array](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md#-01-write-a-program-to-read-and-display-n-numbers-using-an-array)
     - [Mean of array](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md#-02-write-a-program-to-find-the-mean-of-n-numbers-using-arrays)
     - [Position of smallest number](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md#-03-write-a-program-to-print-the-position-of-the-smallest-number-of-n-numbers-using-arrays)
     - [Find largest and 2nd largest number](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/01%20Array.md#-04-write-a-program-to-find-the-second-largest-of-n-numbers-using-an-array)
@@ -34,25 +34,6 @@ A Cheatsheet for all Data Structures and Algorithms for under graduate students
 
 - 🧩 [Linked List](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/02%20Linked%20List.md)
     - [Implement Singly Linked List](https://github.com/XronTrix10/Algo-Data-Structures/blob/dsa/Data%20Structures/02%20Linked%20List.md#-01-implement-a-singly-linked-list-and-perform-several-operations)
-        
-        Operation performed :
-
-        - Create List
-        - Display List
-        - Insert at Beginning
-        - Insert at End 
-        - Insert at Before 
-        - Insert at After 
-        - Delete from Beginning
-        - Delete from End
-        - Delete After a node
-        - Delete a specific node
-        - Delete entire List
-        - Sort the List
-        - Reverse the List
-        - Count Total Nodes
-        - Search for a Node
-    
     - [Implement Circular Linked List]()
 
 
